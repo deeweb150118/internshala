@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    </head>
+
+  <body>
+      <div class="container">
+          <ul>
+              <li><div id="region1"><img src="flour.jpg"></div></li>
+              <li><div id="region2">
+                <h3>Aashirvaad Atta-Sugar Release Control,5Kg Pouch</h3>
+                <b>Rs 209</b> <br><br>
+               <b> Pack Sizes:</b>
+                <button class="button" id="btn-10kg" value="399" onclick="calc10()">10 Kg <br>Rs 399</button>
+                <button class="button" id="btn-5kg"  value="209" onclick="calc5()" >5 Kg <br>Rs 209</button><br><br>
+                
+                <b>Quantity:</b><input id="quantity" type="number" step=1><br><br>
+                <button  class ="button" id="pay-btn" onclick="amountCalculate()" >Payable</button>=<p  style="display: inline;"  id="amount"></p>
+
+              </div>
+            </li>
+              <li><div id="region3"><img src="moong_daal.jpg">
+                      <h3>  BB Royal Moong Daal Pack</h3>
+            
+            </div></li>
+              <li><div id="region4">
+                  <ul>
+                      <li><div class="region"><img src="region1.jpg"><h5>Flour</h5></div></li>
+                      <li><div class="region"><img src="region2.jpg"><h5>Rice</h5></div></li>
+                      <li><div class="region"><img src="region3.jpg"><h5>Oil</h5></div></li>
+                      <li><div class="region"><img src="region4.jpg"><h5>Daal</h5></div></li>
+                  </ul>
+              </div></li>
+          </ul>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
